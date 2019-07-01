@@ -3,7 +3,11 @@ class VideoUploader < CarrierWave::Uploader::Base
   # include CarrierWave::RMagick
   # include CarrierWave::MiniMagick
 
+   if Rails.env.production?
    storage :aws
+  else
+    storage :file
+  end
   
 
   # Override the directory where uploaded files will be stored.
