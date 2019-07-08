@@ -1,8 +1,9 @@
 <script>
-   $(function() {
-    var lessonUrl = $( event.target).data('lesson-url');
-    alert( lessonUrl );
-  });
+  $(function() {
+    $('.new-lesson-button').click(function( event ) {
+      var lessonUrl = $( event.target).data('lesson-url');
+      alert( lessonUrl );
+    });
 
     $('.lessons').sortable({
       update: function( event, ui ) {
