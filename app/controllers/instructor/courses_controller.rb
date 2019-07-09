@@ -4,7 +4,6 @@ class Instructor::CoursesController < ApplicationController
 
   def new
     @course = Course.new
-
   end
 
   def create
@@ -22,7 +21,6 @@ class Instructor::CoursesController < ApplicationController
   end
 
   private
-
   def require_authorized_for_current_course
     if current_course.user != current_user
       render plain: "Unauthorized", status: :unauthorized
@@ -37,7 +35,7 @@ class Instructor::CoursesController < ApplicationController
   def course_params
     params.require(:course).permit(:title, :description, :cost, :image)
   end
-end 
+end
 
  
  
