@@ -36,12 +36,13 @@
   <h1 class="text-center"><%= current_course.title %></h1>
   <%= image_tag current_course.image.url.to_s, class: 'img-fluid' %>
 
-   <div class="text-center">
+  <div class="text-center">
     <!-- Button trigger modal -->
-   <button type="button" class="btn btn-primary btn-lg float-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newSectionModal">
       Add a new section...
     </button>
   </div>
+
 
   <ul class="sections">
     <% current_course.sections.rank(:row_order).each do |section| %>
@@ -51,10 +52,10 @@
           <%= section.title %>
         </div>
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#newLessonModal">
+        <button type="button" class="btn btn-primary btn-lg float-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
           New Lesson...
         </button>
-
+        
         <br class="clr" />
         <br class="clr" />
 
