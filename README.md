@@ -2,7 +2,7 @@
 
 
 This application is built by using Ruby on Rails, Javascript, and jQuery.
-
+A two-sided, video-streaming marketplace platform that features credit card payment capabilities, user role management, complex user interfaces, and advanced database relationships.
 Here is a live feed of the website. [here](https://flixter-saralegui.herokuapp.com/) If you would like to create a account and try, go right ahead.
 
 
@@ -22,3 +22,8 @@ Here is a live feed of the website. [here](https://flixter-saralegui.herokuapp.c
 
 <img src="images/screenshot.jpg">
 
+
+# Acknowledgments
+
+
+University of Arizona coding bootcamp
