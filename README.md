@@ -1,24 +1,24 @@
-# README
+# Flixter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+This application is built by using Ruby on Rails, Javascript, and jQuery.
 
-* Ruby version
+Here is a live feed of the website. [here](https://flixter-saralegui.herokuapp.com/) If you would like to create a account and try, go right ahead.
 
-* System dependencies
 
-* Configuration
+# Features: 
 
-* Database creation
+* Contains a Stripe API which is a secure payment method
 
-* Database initialization
+* Devise is used for user authentication and sign-in forms, could be used for email as well.
 
-* How to run the test suite
+* Carrierwave is used for aws.
 
-* Services (job queues, cache servers, search engines, etc.)
+* Bootstrap is also used in this application
 
-* Deployment instructions
+* Postgresql is the database that is being used in this application.
 
-* ...
+
+
+<img src="images/screenshot.jpg">
+
