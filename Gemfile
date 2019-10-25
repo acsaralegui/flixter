@@ -83,6 +83,7 @@ gem 'ranked-model'
 gem 'jquery-ui-rails'
 gem "font-awesome-rails"
 gem "bundler"
+gem 'mini_racer'
 
 
 
